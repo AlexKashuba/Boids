@@ -7,7 +7,7 @@
 
 World::World(int numOfBoids, std::pair<int, int> windowSize){
     numberOfBoids = numOfBoids;
-    std::srand(std::time(0));
+    std::srand(unsigned(std::time(0)));
     
     worldSize.first = windowSize.first+50;
     worldSize.second = windowSize.second+50;
